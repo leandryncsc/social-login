@@ -11,10 +11,9 @@
           picture.setAttribute("src", data.picture)
         }
         window.onload = function () {
-          const clientID = window.prompt("Cole a sua Cliente ID", "")
           // ID TESTE : 711783365032-3gg8tp8laa7hub0l08j7b63uo9ej2tjb.apps.googleusercontent.com
           google.accounts.id.initialize({
-            client_id: clientID,
+            client_id: "711783365032-3gg8tp8laa7hub0l08j7b63uo9ej2tjb.apps.googleusercontent.com",
             callback: handleCredentialResponse
           });
 
@@ -24,7 +23,7 @@
               size: "large",
               type:"standard",
               shape:"pill",
-              //text:"continue_with",
+              text:"continue_with",
               ogo_alignment:"left",
               width:"300",
         }  // customization attributes
