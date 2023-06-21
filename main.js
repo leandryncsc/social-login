@@ -12,6 +12,7 @@
         }
         window.onload = function () {
           const clientID = window.prompt("Cole a sua Cliente ID", "")
+          // ID TESTE : 711783365032-3gg8tp8laa7hub0l08j7b63uo9ej2tjb.apps.googleusercontent.com
           google.accounts.id.initialize({
             client_id: clientID,
             callback: handleCredentialResponse
